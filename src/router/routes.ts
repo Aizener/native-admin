@@ -1,11 +1,13 @@
 import { RouteRecordRaw } from "vue-router"
 import Layout from '@/views/Layout.vue'
+import NotFound from '@/views/NotFound.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     component: Layout,
     name: 'Layout',
+    redirect: '/home',
     children: [
       {
         path: '/home',
@@ -40,7 +42,8 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/views/Settings.vue')
       }
     ]
-  }
+  },
+  { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound },
 ]
 
 export default routes

@@ -26,7 +26,7 @@ import { UserAvatar } from '@vicons/carbon'
 import { useIcon } from '@/utils';
 
 const store = useStore()
-const UserIcon = useIcon(UserAvatar, 26, '#666')
+const UserIcon = useIcon(UserAvatar, 26, '#333')
 const handleToggleCollapse = () => {
   store.collapsed = !store.collapsed
 }

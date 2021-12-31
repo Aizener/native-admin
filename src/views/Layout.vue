@@ -6,7 +6,7 @@
       :collapsed-width="64"
       :collapsed="collapsed"
     >
-      <Menu />
+      <suspense><Menu /></suspense>
     </n-layout-sider>
     <n-layout>
       <n-layout-header>
