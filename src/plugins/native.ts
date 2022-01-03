@@ -7,11 +7,13 @@ import {
   NMenu,
   NButton,
   NIcon,
-  NPopover
+  NPopover,
+  NCard,
+  NDivider
 } from 'naive-ui'
 
 const naive = create({
-  components: [NLayout, NLayoutHeader, NLayoutSider, NLayoutContent, NMenu, NButton, NIcon, NPopover]
+  components: [NLayout, NLayoutHeader, NLayoutSider, NLayoutContent, NMenu, NButton, NIcon, NPopover, NCard, NDivider]
 })
 
 export default naive
